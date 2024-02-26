@@ -359,7 +359,8 @@ nav {
     background-color: var(--text-light);
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 400px) {
     .nav__links {
         display: none;
     }
@@ -401,6 +402,49 @@ nav {
         display: inline-block;
         max-height: 50vh;
         width: auto;
+    }
+
+    .client__card {
+        margin-bottom: 2rem;
+    }
+
+    .footer__container {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav__links {
+        display: none;
+    }
+
+    .header__container {
+        padding-bottom: 25rem;
+    }
+
+    .booking__container {
+        flex-direction: column;
+        bottom: -25rem;
+    }
+
+    .booking__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .popular__grid {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .popular__card img {
+        min-height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .client__grid {
+        grid-template-columns: repeat(1, 1fr);
+
     }
 
     .client__card {

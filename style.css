@@ -193,13 +193,14 @@ nav {
 }
 
 .popular__card {
-    overflow: hidden;
+    overflow: auto;
     border-radius: 1rem;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .popular__content {
     padding: 1rem;
+
 }
 
 .popular__card__header {
@@ -214,6 +215,8 @@ nav {
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--text-dark);
+    object-fit: cover;
+
 }
 
 .popular__content p {
@@ -223,7 +226,7 @@ nav {
 .popular__card img {
     max-height: 200px;
     width: 100%;
-    object-fit: 1;
+    object-fit: cover;
 }
 
 .client {
@@ -375,7 +378,13 @@ nav {
     }
 
     .popular__grid {
-        grid-template-columns: repeat(1, 1fr);
+        display: inline-block;
+        max-height: 50vh;
+        width: auto;
+    }
+
+    .popular__card {
+        margin-bottom: 2rem;
     }
 
     .popular__card img {
@@ -384,8 +393,18 @@ nav {
         object-fit: cover;
     }
 
+    .popular__card h4 {
+        display: inline-block;
+    }
+
     .client__grid {
-        grid-template-columns: repeat(1, 1fr);
+        display: inline-block;
+        max-height: 50vh;
+        width: auto;
+    }
+
+    .client__card {
+        margin-bottom: 2rem;
     }
 
     .footer__container {

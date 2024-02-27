@@ -139,7 +139,7 @@ nav {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--text-dark);
     pointer-events: none;
@@ -370,18 +370,12 @@ nav {
     }
 
     .booking__container {
-        flex-direction: column;
-        bottom: -25rem;
-    }
-
-    .booking__container {
         grid-template-columns: repeat(1, 1fr);
     }
 
     .popular__grid {
-        display: inline-block;
-        max-height: 50vh;
-        width: auto;
+        display: flex;
+        flex-direction: column;
     }
 
     .popular__card {
@@ -399,9 +393,8 @@ nav {
     }
 
     .client__grid {
-        display: inline-block;
-        max-height: 50vh;
-        width: auto;
+        display: flex;
+        flex-direction: column;
     }
 
     .client__card {
